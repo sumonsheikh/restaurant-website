@@ -115,7 +115,7 @@ img{
         position: fixed;
         padding: 1.5rem 0 1rem;
         text-align: center;
-        top:var(--header-height);
+        top:100%;
         left:0;
         width: 100%;
         background-color: var(--body-color);
@@ -126,12 +126,15 @@ img{
     }
 }
 
-.nav-item{
+.nav_item{
     margin-bottom: var(--mb-2);
 }
 .nav_link, .nav_logo, .nav_toggle{
     color: var(--text-color);
     font-weight: var(--font-medium);
+}
+.nav_logo:hover{
+    color:var(--first-color);
 }
 .nav_link{
     transition: 0.3s;
@@ -139,7 +142,10 @@ img{
 .nav_link:hover{
     color: var(--first-color);
 }
-
+.nav_toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
 /* ======== CLASS CSS ========== */
 .section{
     padding: 4rem 0 2rem;
@@ -157,4 +163,9 @@ img{
     color:var(--first-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
+}
+
+/* ========= SHOW MENU  ============== */
+.show_menu{
+    top:var(--header-height);
 }
