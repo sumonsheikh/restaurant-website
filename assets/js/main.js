@@ -10,3 +10,11 @@ const shwoMenu = (toggleId, navId)=>{
     }
 }
 shwoMenu('nav_toggle', 'nav_menu');
+
+// Remove Menu
+const navLink = document.querySelectorAll('nav_link');
+function removeMenu(){
+    const navMenu = document.getElementById('nav_menu');
+    navMenu.classList.remove('show_menu');
+}
+navLink.forEach(n =>n.addEventListener('click', removeMenu));
