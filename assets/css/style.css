@@ -204,14 +204,23 @@ img{
 }
 
 /* ======= ABOUT ========== */
+.about{
+
+}
 .about_data{
     text-align: center;
+    margin-bottom: var(--mb-3);
 }
 .about_description{
     margin-bottom: var(--mb-3);
 }
 .about_img{
     width: 280px;
-    border-radius: .5rem;
-    justify-self:center;
+    border-radius: 8px;
+    justify-self: stretch;
+}
+/* ======== SERVICES ============= */
+.services_content{
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto fit, minmax(220px, 1fr));
 }
