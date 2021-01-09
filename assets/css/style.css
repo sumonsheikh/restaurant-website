@@ -150,15 +150,15 @@ img{
 .section{
     padding: 4rem 0 2rem;
 }
-.section-title, .section-subtitle{
+.section_title, .section_subtitle{
     text-align: center;
 }
-.section-title{
+.section_title{
     font-size: var(--h1-font-size);
     color: var(--text-color);
     margin-bottom: var(--mb-3);
 }
-.section-subtitle{
+.section_subtitle{
     display:block;
     color:var(--first-color);
     font-weight: var(--font-medium);
@@ -195,7 +195,7 @@ img{
     display: inline-block;
     background-color: var(--first-color);
     color:#fff;
-    padding:0.75 rem 1rem;
+    padding: .75rem 1rem;
     border-radius: .5rem;
     transition: .3s;
 }
