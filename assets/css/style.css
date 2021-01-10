@@ -146,6 +146,7 @@ img{
     font-size: 1.3rem;
     cursor: pointer;
 }
+
 /* ======== CLASS CSS ========== */
 .section{
     padding: 4rem 0 2rem;
@@ -219,6 +220,7 @@ img{
     height: 300px;
     border-radius: 8px;
 }
+
 /* ======== SERVICES ============= */
 .services_container{
     row-gap: 2.5rem;
@@ -243,4 +245,24 @@ img{
 .services_description{
     padding: 0 1.5rem;
     margin-bottom: var(--mb-3);
+}
+
+/* ========= MENU SECTION ========== */
+.menu_container{
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.menu_content{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(3,74,40, 0.1);
+    padding: 0.75rem;
+}
+.menu_img{
+    width: 100px;
+    align-items: center;
+    margin-bottom: var(--mb-2);
 }
