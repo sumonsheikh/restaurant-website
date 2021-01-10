@@ -216,9 +216,8 @@ img{
 }
 .about_img{
     width: 280px;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
-    justify-self: center;
 }
 /* ======== SERVICES ============= */
 .services_container{
