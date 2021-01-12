@@ -309,3 +309,11 @@ img{
     width: 230px;
     justify-content: center;
 }
+
+/* ====== CONTACT US ========== */
+.contact_container{
+    text-align: center;
+}
+.contact_description{
+    margin-bottom: var(--mb-5);
+}
