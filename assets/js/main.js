@@ -19,3 +19,4 @@ function removeMenu(){
     console.log("navlink clicked");
 }
 navLink.forEach(n =>n.addEventListener('click', removeMenu));
+
