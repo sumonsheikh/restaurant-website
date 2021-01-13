@@ -353,7 +353,7 @@ img{
 
 /* ========== FOOTER ========= */
 .footer_container{
-    grid-template-columns: repeat(auto-fit, minmax(220px, lfr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap:2rem;
 }
 
@@ -417,6 +417,7 @@ img{
         text-align: initial;
     }
     .about_container img , .app_img{
+        width: 380px;
         order: -1;
     }
     .contact_button{
