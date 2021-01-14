@@ -112,7 +112,28 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
-
+/* ========= SCROLL TOP ======== */
+.scrolltop{
+    position: fixed;
+    bottom:-20%;
+    right: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(6,156,4, 0.5);
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: 0.4s;
+    
+}
+.scrolltop:hover{
+    background-color: var(--first-color-alt);
+}
+.scrolltop_icon{
+    font-size: 1.8rem;
+    color: var(--body-color);
+}
 /* ========= NAV ============= */
 .nav{
     max-width:1024px ;
@@ -447,6 +468,17 @@ img{
     .home_container{
         height: 100vh;
         justify-items: center;
+    }
+    .menu_container{
+        grid-template-columns: repeat(3 , 210px);
+        column-gap: 4rem;
+        margin-top: var(--mb-6);
+    }
+    .menu_content{
+        padding: 1.5rem;
+    }
+    .menu_img{
+        width: 310px;
     }
 }
 @media screen and (min-width: 960px){
