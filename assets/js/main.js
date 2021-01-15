@@ -20,3 +20,20 @@ function removeMenu(){
 }
 navLink.forEach(n =>n.addEventListener('click', removeMenu));
 
+
+// ========== SCROLL ==============
+
+// ============Show Scroll Top ========
+function scrollTop(){
+    const scrollTop =  document.getElementById('scrolltop');
+    if(this.scrollY >= 560){
+        scrollTop.classList.add('show_scroll');
+    }
+    else{
+        scrollTop.classList.remove('show_scroll');
+    }
+}
+window.addEventListener('scroll', scrollTop);
+
+const sections = document.querySelectorAll('section[id]');
+console.log(sections);

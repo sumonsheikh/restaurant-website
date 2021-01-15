@@ -134,6 +134,11 @@ img{
     font-size: 1.8rem;
     color: var(--body-color);
 }
+/* ===SHOW SCROLL ========== */
+.show_scroll{
+    visibility:visible;
+    bottom: 1.5rem;
+}
 /* ========= NAV ============= */
 .nav{
     max-width:1024px ;
