@@ -1,4 +1,4 @@
-// Show Menu 
+// ======== Show Menu ==============
 
 const shwoMenu = (toggleId, navId)=>{
     const toggle = document.getElementById(toggleId);
@@ -11,7 +11,7 @@ const shwoMenu = (toggleId, navId)=>{
 }
 shwoMenu('nav_toggle', 'nav_menu');
 
-// Remove Menu
+//========== Remove Menu =============
 const navLink = document.querySelectorAll('.nav_link');
 function removeMenu(){
     const navMenu = document.getElementById('nav_menu');
@@ -37,3 +37,19 @@ window.addEventListener('scroll', scrollTop);
 
 const sections = document.querySelectorAll('section[id]');
 console.log(sections);
+
+// ====== ACTIVATE SCROLL REVEAL ANIMATION =======
+const scrollReveal = ScrollReveal({
+    origin : 'top',
+    distance: '30px',
+    duration : '2000',
+    reset : true
+});
+scrollReveal.reveal(`
+    .home_data, .home_img,
+    .about_data, .about_img,
+    .app_data, .app_img;
+    .contact_data, .contact_button,
+    .footer_content`, {
+        interval : 200
+    })
