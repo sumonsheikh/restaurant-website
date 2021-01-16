@@ -35,6 +35,15 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop);
 
+// ====== Activate or Deactivate the theme manually with the button ====
+const themeButton = document.getElementById('theme_button');
+const darkTheme = 'dark-theme';
+
+themeButton.addEventListener('click',  ()=>{
+    document.body.classList.toggle('darkTheme');
+})
+
+
 const sections = document.querySelectorAll('section[id]');
 console.log(sections);
 
