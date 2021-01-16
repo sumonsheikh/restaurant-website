@@ -40,7 +40,8 @@ const themeButton = document.getElementById('theme_button');
 const darkTheme = 'dark-theme';
 
 themeButton.addEventListener('click',  ()=>{
-    document.body.classList.toggle('darkTheme');
+    document.body.classList.toggle(darkTheme);
+    console.log('hellow dark/light');
 })
 
 
