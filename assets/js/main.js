@@ -40,10 +40,24 @@ const themeButton = document.getElementById('theme_button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'bx-sun';
 
+//Previous selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+
+if(selectedTheme){
+    document.body.classList[ selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[ selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
+}
+
 themeButton.addEventListener('click',  ()=>{
     document.body.classList.toggle(darkTheme);
     themeButton.classList.toggle(iconTheme);
     console.log('hellow dark/light');
+
+    localStorage.getItem('selected-theme', getCurrentTheme());
+    localStorage.getItem('selected-icon', getCurrentIcon());
 })
 
 
