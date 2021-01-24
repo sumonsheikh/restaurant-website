@@ -56,8 +56,8 @@ themeButton.addEventListener('click',  ()=>{
     themeButton.classList.toggle(iconTheme);
     console.log('hellow dark/light');
 
-    localStorage.getItem('selected-theme', getCurrentTheme());
-    localStorage.getItem('selected-icon', getCurrentIcon());
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
 })
 
 
